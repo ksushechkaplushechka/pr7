@@ -3,10 +3,10 @@ name: .NET 6 Build and Syntax Check
 on:
   push:
     branches:
-      - main
+      - prseven
   pull_request:
     branches:
-      - main
+      - prseven
 
 jobs:
   build:
