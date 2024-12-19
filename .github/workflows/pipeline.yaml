@@ -1,4 +1,4 @@
-name: .NET 6 Build and Syntax Check
+name: .NET Framework Build and Syntax Check
 
 on:
   push:
@@ -18,6 +18,8 @@ jobs:
     - name: Install .NET Framework Developer Pack
       run: choco install netfx-4.7.2-devpack -y
 
+    - name: Set up MSBuild
+      uses: microsoft/setup-msbuild@v1
+
     - name: Build with MSBuild
       run: msbuild /p:Configuration=Release
-

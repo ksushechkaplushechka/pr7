@@ -151,7 +151,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Xaml">
-      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
