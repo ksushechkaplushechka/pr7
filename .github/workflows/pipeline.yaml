@@ -26,6 +26,8 @@ jobs:
 
     - name: Install XAML Styler
       run: dotnet tool install -g XamlStyler.Console
-      
+
     - name: Format XAML files
-      run: xstyler -d ./PathToXamlFiles
+      run: xstyler -d ./AutobikeCopy
+
+
