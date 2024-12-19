@@ -23,3 +23,9 @@ jobs:
 
     - name: Build with MSBuild
       run: msbuild /p:Configuration=Release
+
+    - name: Install XAML Styler
+      run: dotnet tool install -g XamlStyler.Console
+      
+    - name: Format XAML files
+      run: xstyler -d ./PathToXamlFiles
