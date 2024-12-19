@@ -10,22 +10,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: windows-latest
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Set up .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '6.0.400' # Указана версия .NET SDK
+    - name: Install .NET Framework Developer Pack
+      run: choco install netfx-4.7.2-devpack -y
 
-    - name: Restore dependencies
-      run: dotnet restore
+    - name: Build with MSBuild
+      run: msbuild /p:Configuration=Release
 
-    - name: Build project
-      run: dotnet build --no-restore
-
-    - name: Run code analysis
-      run: dotnet build --no-restore /warnaserror
