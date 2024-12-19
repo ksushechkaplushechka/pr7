@@ -77,7 +77,7 @@
         <!-- Control Buttons -->
         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,30">
             <Button x:Name="AddAccountButton" Content="Добавить" Style="{StaticResource RoundedButtonStyle}" Click="AddAccountButton_Click" Margin="5" Width="120" Height="40"
-                    Background="#4CAF50" BorderBrush="#4CAF50"/>
+                Background="#4CAF50" BorderBrush="#4CAF50"
             <Button x:Name="EditAccountButton" Content="Редактировать" Style="{StaticResource RoundedButtonStyle}" Click="EditAccountButton_Click" Margin="5" Width="120" Height="40"
                     Background="Transparent" Foreground="#4CAF50" BorderBrush="#4CAF50"/>
             <Button x:Name="DeleteAccountButton" Content="Удалить" Style="{StaticResource RoundedButtonStyle}" Click="DeleteAccountButton_Click" Margin="5" Width="120" Height="40"
